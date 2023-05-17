@@ -1,0 +1,99 @@
+@import './variables';
+
+/*inicio nav*/
+
+header {
+    width: $ancho;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-general-black;
+
+    .navbar {
+        width: $ancho;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @include desktop-2 {
+            height: 300px;
+            font-size: 30px;
+        }
+
+        .navbar-brand {
+            text-decoration: none;
+            list-style: none;
+            color: $color-general-white;
+            font-size: 60px;
+            font-family: $font1;
+            padding: 25px;
+
+            @include mobile-1 {
+                margin: 0 auto;
+            }
+
+            @include tablet-1 {
+                margin: 0;
+            }
+
+            @include desktop-2 {
+                font-size: 120px;
+            }
+        }
+    }
+
+    .navbar-dark {
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .nav-link {
+                border-radius: 5px;
+                color: $color-general-white;
+                text-decoration: none;
+                list-style: none;
+                transition: all .5s;
+                margin: 0 40px;
+            }
+        }
+    }
+
+    .navbar-dark {
+        .navbar-nav {
+            .link-prio {
+            @extend .nav-link;
+            border: 3px solid $color-general-white;
+            box-shadow: inset 0 0 5px $color-general-white;
+            position: relative;
+            padding: 10px;
+        }
+    }
+    }
+
+
+    .navbar-dark {
+        .navbar-nav {
+            .nav-link:hover {
+                border-radius: 5px;
+                border: $color-general-white;
+                background-color: $color-general-white;
+                color: $color-general-black;
+                transition: all .5s;
+                transform: scale(1.1);
+
+                @include mobile-1 {
+                    background-color: $color-general-black;
+                    color: $color-general-white;
+                }
+            }
+        }
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+}
+
+/*fin nav*/
