@@ -1,0 +1,19 @@
+/* Hover-redes*/
+$redes: (
+    instagram: rgb(158, 5, 158),
+    twitter: rgb(0, 106, 255),
+    facebook: rgb(42, 42, 159),
+    linkedin: rgb(22, 22, 133),
+    github: rgb(235, 235, 235),
+);
+
+@each $names,
+$colors in $redes {
+    .fa-#{$names} {
+        &:hover {
+            color: $colors;
+            transition: all .5s;
+            transform: scale(1.2);
+        }
+    }
+}

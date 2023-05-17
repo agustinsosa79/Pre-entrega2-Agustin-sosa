@@ -1,0 +1,281 @@
+@import './variables';
+
+// MAPS
+
+$redes: (
+    100: violet,
+    200: skyblue,
+    300: blue,
+    400: white,
+);
+
+
+
+/* pie de pagina */
+
+.pie-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-general-black;
+    color: $color-general-white;
+    margin: 0 auto;
+    padding: 50px;
+    justify-content: space-between;
+
+    @include mobile-1 {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $color-general-black;
+        color: $color-general-white;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    @include tablet-1 {
+        width: $ancho;
+        padding: 50px;
+    }
+
+    @include desktop-1 {
+        width: $ancho;
+        padding: 50px;
+    }
+
+    @include desktop-2 {
+        width: $ancho;
+        height: 400px;
+    }
+
+    .pie-1 {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        @include mobile-1 {
+            margin-top: 10px;
+        }
+
+        @include tablet-1 {
+            margin-top: 10px;
+        }
+
+        @include desktop-1 {
+            margin: 10px;
+            margin-top: 10px;
+        }
+
+        @include desktop-2 {
+            margin: 10px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: $font2;
+            color: $color-general-white;
+
+            @include mobile-1 {
+                font-size: 20px;
+            }
+
+            @include tablet-1 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            @include desktop-1 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            @include desktop-2 {
+                font-size: 60px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    p {
+        padding-right: 40%;
+
+        @include mobile-1 {
+            width: 100px;
+            height: auto;
+            display: flex;
+            padding: 0px 0px 0px 0px;
+            font-size: 12px;
+        }
+
+        @include tablet-1 {
+            width: 200px;
+            height: auto;
+            display: flex;
+            padding: 0px;
+            font-size: 12px;
+        }
+
+        @include desktop-1 {
+            width: 200px;
+            height: auto;
+            display: flex;
+            padding: 0px;
+            font-size: 12px;
+        }
+
+        @include desktop-2 {
+            width: 900px;
+            height: auto;
+            display: flex;
+            padding: 0;
+            font-size: 40px;
+        }
+    }
+
+    .pie-2 {
+        align-items: center;
+        margin: 0 auto;
+
+        @include mobile-1 {
+            margin: 0 auto;
+        }
+
+        @include tablet-1 {
+            margin: 0 auto;
+        }
+
+        @include desktop-1 {
+            margin: 0;
+            padding-left: 260px;
+        }
+
+        @include desktop-2 {
+            margin: 0;
+            padding-left: 260px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            color: $color-general-white;
+            padding-left: 50px;
+
+            @include mobile-1 {
+                margin: 10px;
+                padding: 0;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            @include tablet-1 {
+                margin: 10px;
+                padding: 0;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+            }
+
+            @include desktop-1 {
+                margin: 10px;
+                padding: 0;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+            }
+
+            @include desktop-2 {
+                margin: 10px;
+                padding: 0;
+                font-size: 60px;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .redes {
+        list-style: none;
+        text-decoration: none;
+        color: $color-general-white;
+
+        &:hover {
+            @include mobile-1 {
+                color: $color-general-white;
+                transition: none;
+            }
+
+            @include tablet-1 {
+                color: $color-general-white;
+                transition: none;
+            }
+        }
+
+        ul {
+            list-style: none;
+            gap: 30px;
+            font-size: 30px;
+            display: flex;
+
+            @include mobile-1 {
+                gap: 11px;
+                padding-left: 5px;
+            }
+
+            @include desktop-2 {
+                gap: 100px;
+                padding: 0 90px;
+            }
+
+            li {
+                @include mobile-1 {
+                    font-size: 17px;
+                }
+
+                @include tablet-1 {
+                    font-size: 25px;
+                }
+
+                @include desktop-1 {
+                    font-size: 25px;
+                }
+
+                @include desktop-2 {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+    small {
+        margin-top: 25px;
+        margin-bottom: -25px;
+        padding: 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile-1 {
+            margin: 5px;
+            padding: 1px;
+        }
+
+        @include desktop-1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        @include desktop-2 {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+    }
+}
+
+/* pie de pagina fin */
