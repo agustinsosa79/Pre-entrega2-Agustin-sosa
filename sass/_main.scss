@@ -1,0 +1,626 @@
+@import './variables';
+
+/* main inicio*/
+
+.sub-header {
+    font-size: 25px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $font2;
+    color: $color-general-white;
+
+    @include desktop-2 {
+        font-size: 30px;
+        font-family: $font3;
+        font-weight: 400;
+    }
+
+    h3 {
+        @include desktop-2 {
+            font-size: 40px;
+        }
+    }
+
+    select {
+        font-size: 95%;
+
+        @include desktop-1 {
+            font-size: 15px;
+        }
+
+        @include desktop-2 {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.container-items {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+
+    @include mobile-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 0px;
+        border-radius: 300px;
+    }
+
+    @include tablet-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 0px;
+    }
+
+    h4 {
+        @include mobile-1 {
+            font-size: 16px;
+        }
+
+        @include tablet-1 {
+            font-size: 19px;
+        }
+
+        @include desktop-2 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+
+    .item {
+        box-shadow: $t-40px $color-general-black;
+        border-radius: 10%;
+        background-color: $color-general-white;
+        padding: 10px;
+        background-position: 10%;
+        transform: scale(0.9);
+
+        @include mobile-1 {
+            padding: 7px;
+            border-radius: 10%;
+            background-color: $color-general-white;
+        }
+
+        @include tablet-1 {
+            padding: 30px 20px;
+            border-radius: 15px;
+            background-color: $color-general-white;
+        }
+
+        @include desktop-2 {
+            margin: 0 auto;
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .info-product {
+            padding: 15px 30px;
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            @include mobile-1 {
+                display: flex;
+                flex-direction: column;
+                gap: 1px;
+            }
+
+            @include tablet-1 {
+                gap: 1px;
+                padding: 16px;
+            }
+
+            @include desktop-2 {
+                width: 500px;
+            }
+        }
+
+        .info-product {
+            button {
+                border-radius: 20px;
+                border: none;
+                background: none;
+                background-color: $color-general-black;
+                transition: all .5s;
+                color: $color-general-white;
+                padding: 15px 10px;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 17px;
+
+                @include mobile-1 {
+                    padding: 7px 5px;
+                    font-size: 12px;
+                    border-radius: 8px;
+                    transition: 0;
+                }
+
+                @include tablet-1 {
+                    padding: 10px 8px;
+                    font-size: 17px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .info-product {
+            button:hover {
+                background-color: $button-color;
+                transition: all .5s;
+
+                @include mobile-1 {
+                    background-color: $color-general-black;
+                }
+
+                @include tablet-1 {
+                    background-color: $color-general-black
+                }
+            }
+        }
+
+        .price {
+            font-size: 17px;
+            font-weight: 900;
+
+            @include mobile-1 {
+                font-size: 12px;
+                font-weight: 900;
+            }
+
+            @include desktop-2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .item {
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all .5s;
+
+            @include mobile-1 {
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            @include tablet-1 {
+                width: 190px;
+                height: 170px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            @include desktop-1 {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px 10px 10px 10px;
+                transition: all .5s;
+            }
+
+            @include desktop-2 {
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        figure {
+            overflow: hidden;
+        }
+    }
+
+    figure {
+        overflow: hidden;
+    }
+
+
+    .item {
+        img:hover {
+            transform: scale(1.1);
+            border-radius: 10px 10px 10px 10px;
+
+            @include mobile-1 {
+                transform: 0;
+            }
+
+            @include tablet-1 {
+                transform: 0;
+            }
+        }
+    }
+}
+
+/*-------------main-fin----------*/
+
+/*-------------contacto-inicio---------*/
+
+form {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    height: 1040px;
+    font-family: $font3;
+    background-color: $color-general-white;
+
+    @include mobile-1 {
+        width: 95%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include tablet-1 {
+        width: 80%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-size: 17px;
+
+        h2 {
+            color: $color-general-black;
+        }
+
+        label {
+            color: $color-general-black;
+            font-size: 15px;
+            font-weight: 550;
+            margin-bottom: 20px;
+        }
+
+        input,
+        textarea {
+            padding: 17px 30px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: #EDFFF0;
+            border: 2px solid #F0FAF1;
+            color: $color-general-black;
+            font-weight: 600;
+            outline: none;
+
+            @include mobile-1 {
+                width: 90%;
+            }
+
+            @include tablet-1 {
+                width: 90%;
+            }
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: $color-general-black;
+        }
+
+        .form-txt {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            color: $color-general-black;
+            font-size: 14px;
+
+            .pt {
+                color: $color-general-black;
+                font-size: 16px;
+                margin: 30px;
+
+                @include mobile-1 {
+                    margin: 0 auto;
+                    display: flex;
+                }
+            }
+        }
+
+        .boton-contacto {
+            font-size: 16px;
+            color: $color-general-white;
+            border: 0;
+            border-radius: 12px;
+            background-color: $color-general-black;
+            cursor: pointer
+        }
+
+        .boton-contacto:hover {
+            background-color: $button-color;
+            transition: all .5s;
+
+            @include mobile-1 {
+                background-color: $color-general-black;
+            }
+
+            @include tablet-1 {
+                background-color: $color-general-black
+            }
+        }
+    }
+}
+
+/*--------------contacto-fin------------*/
+
+/*-------------Servicios-inicio------------*/
+
+.servicios {
+    font-family: $font2;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    @include desktop-2 {
+        padding: 30px;
+        height: auto;
+    }
+
+    .p-1 {
+        color: $color-general-white;
+        margin: 200px;
+        margin-top: 2%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: $color-general-black;
+        padding: 70px 75px;
+
+        @include mobile-1 {
+            margin: 15px;
+        }
+
+        @include desktop-2 {
+            margin: 0 auto;
+            width: 60%;
+            padding: 30px;
+        }
+
+        .p-1-t {
+            font-size: 40px;
+            color: $color-general-white;
+
+            @include mobile-1 {
+                font-size: 30px;
+            }
+
+            @include desktop-2 {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            @include desktop-2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .p-2 {
+        color: $color-general-white;
+        margin: 200px;
+        margin-top: -140px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: $color-general-black;
+        background-position: 10%;
+        transform: scale(1);
+        padding: 70px 75px;
+
+        @include mobile-1 {
+            margin: 15px;
+        }
+
+        @include desktop-2 {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 60%;
+        }
+
+        .p-2-t {
+            font-size: 40px;
+            color: $color-general-white;
+
+            @include mobile-1 {
+                font-size: 30px;
+            }
+
+            @include desktop-2 {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            @include desktop-2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .p-3 {
+        color: $color-general-white;
+        margin: 200px;
+        margin-top: -140px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: $color-general-black;
+        padding: 70px 75px;
+        margin-bottom: 2%;
+
+        @include mobile-1 {
+            margin: 15px;
+        }
+
+        @include desktop-2 {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 60%;
+        }
+
+        .p-3-t {
+            font-size: 40px;
+            color: $color-general-white;
+
+            @include mobile-1 {
+                font-size: 30px;
+            }
+
+            @include desktop-2 {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            @include desktop-2 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+/*------servicios fin------*/
+
+
+/*---------carrito-inicio---------*/
+
+.carrito-item {
+    margin: 0 auto;
+    width: 400px;
+    height: 350px;
+    font-family: $font3;
+    margin-bottom: 270px;
+
+    @include mobile-1 {
+        width: 90%;
+    }
+
+    @include desktop-2 {
+        margin: 0 auto;
+        height: auto;
+        font-family: $font3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .items {
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: $color-general-white;
+        ;
+        background-position: 10%;
+        transform: scale(0.9);
+        padding: 30px;
+        box-shadow: 0 0 15px $color-general-black;
+
+        @include desktop-2 {
+            margin: 0 auto;
+            padding: 220px;
+        }
+
+        .info-producto {
+            text-align: center;
+            padding: 15px 30px;
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 90px;
+
+
+            @include desktop-2 {
+                width: 100%;
+                font-size: 18px;
+                gap: 200px;
+                padding: 0;
+            }
+
+            h2 {
+                @include desktop-2 {
+                    font-size: 45px;
+                }
+            }
+        }
+
+        .boton-carrito {
+            margin-top: 30px;
+            align-items: center;
+            border-radius: 10px;
+            border: none;
+            background-color: $color-general-black;
+            transition: all .5s;
+            color: $color-general-white;
+            padding: 10px 40px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 17px;
+
+            @include desktop-2 {
+                font-size: 30px;
+                transition: 0;
+            }
+        }
+
+        .boton-carrito:hover {
+            background-color: $color-general-black;
+            color: $color-general-white;
+            transition: all .5s;
+            padding: 15px 50px;
+
+            @include mobile-1 {
+                transition: none;
+            }
+
+            @include desktop-2 {
+                transition: 0;
+            }
+        }
+
+        .precio {
+            font-size: 18px;
+            font-weight: 900;
+
+            @include desktop-2 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+/* carrito fin */
+

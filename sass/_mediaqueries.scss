@@ -1,0 +1,25 @@
+@import './variables';
+
+@mixin mobile-1 {
+    @media only screen and (max-width:$MediaMobile-600) {
+        @content;
+    }
+}
+
+@mixin tablet-1 {
+    @media only screen and (min-width:$MediaTablet-601-min) and (max-width:$MediaTablet-820-max) {
+        @content;
+    }
+}
+
+@mixin desktop-1 {
+    @media only screen and (min-width:$MediaDesktop-820-min) and (max-width:$MediaDesktop-1280-max){
+        @content;
+    }
+}
+
+@mixin desktop-2 {
+    @media only screen and (min-width:$MediaDesktop-1441) {
+        @content;
+    }
+}
