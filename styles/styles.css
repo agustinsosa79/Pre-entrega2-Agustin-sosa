@@ -1,3 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(50deg, rgb(51, 47, 47), black);
+  background-size: 400% 400%;
+  position: relative;
+  animation: cambiar 5s ease infinite;
+}
+
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 /* main inicio*/
 .sub-header {
   font-size: 25px;
