@@ -45,7 +45,7 @@ $redes: (
 
     @include desktop-2 {
         width: $ancho;
-        height: 400px;
+        height: 700px;
     }
 
     .pie-1 {
@@ -98,7 +98,9 @@ $redes: (
     }
 
     p {
-        padding-right: 40%;
+        margin: 0 auto;
+        width: 400px;
+        height: auto;
 
         @include mobile-1 {
             width: 100px;
@@ -125,8 +127,8 @@ $redes: (
         }
 
         @include desktop-2 {
-            width: 900px;
             height: auto;
+            width: 900px;
             display: flex;
             padding: 0;
             font-size: 40px;
@@ -136,13 +138,16 @@ $redes: (
     .pie-2 {
         align-items: center;
         margin: 0 auto;
+        padding-left: 500px;
 
         @include mobile-1 {
             margin: 0 auto;
+            padding-left: 0;
         }
 
         @include tablet-1 {
             margin: 0 auto;
+            padding-left: 0px;
         }
 
         @include desktop-1 {
